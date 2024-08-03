@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>TSM</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>   
+                    <ul>
+                        <img src="logo/Untitled-removebg-preview - Copy.png" width="200px">
+                        <li class="hideOnMobile"><a href="#">HOME</a></li>
+                        <li class="hideOnMobile" ><a href="#">PRODUCT</a></li>
+                        <li class="hideOnMobile"><a href="#">CONTACT</a></li>
+                        <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>            
+                </nav>      
+                <script>
+                    function showSidebar(){
+                        const sidebar = document.querySelector('.sidebar')
+                        sidebar.style.display = 'flex'
+                    }
+                    function hideSidebar(){
+                        const sidebar = document.querySelector('.sidebar')
+                        sidebar.style.display = 'none'
+                    }
+                </script>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                   <h1>Selamat Datang di Tiga Saudara Motor  </h1>
+                   <p>Pilihan Terbaik untuk Semua Kebutuhan Motor Anda</p>
+                   <a href="" class="btn">Jelajahi Sekarang &#8594;</a>
+                </div>
+                <div class="col-2">
+                <img src="21364.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- PRODUCT SLIDER--->
+    <section class="product">
+        <h2 class="product-category">Featured Product</h2>
+        <button class="pre-btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="nxt-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="MPX2-Oli-Honda.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">oli motor</p>
+                    <span class="price">Rp 45.000,00</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="MPX2-Oli-Honda.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">oli motor</p>
+                    <span class="price">Rp 45.000,00</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="logo/Untitled.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-short-description">oli motor</p>
+                    <span class="price">Rp 45.000,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+   <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                   <img src="logo/Untitled-removebg-preview - Copy.png" width="200px">
+                  <p>  <i class="fa-solid fa-location-dot"></i> Duren Sawit</p>
+                  <p> <i class="fa-solid fa-clock"></i> setiap hari</p>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
